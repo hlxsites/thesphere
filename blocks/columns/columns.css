@@ -7,6 +7,11 @@
     width: 100%;
 }
 
+/* center block option */
+.columns.center {
+    text-align: center;
+}
+
 @media (min-width: 900px) {
     .columns > div {
         display: flex;
