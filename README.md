@@ -1,9 +1,8 @@
-# Your Project's Title...
-Your project's description...
+# F-Secure - thesphere
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.hlx.page/
-- Live: https://main--{repo}--{owner}.hlx.live/
+- Preview: https://main--thesphere--hlxsites.hlx.page/
+- Live: https://main--thesphere--hlxsites.hlx.live/
 
 ## Installation
 
