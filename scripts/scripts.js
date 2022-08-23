@@ -667,6 +667,16 @@ async function loadEager(doc) {
   }
 }
 
+function wrapImagesWithLink(main) {
+  // if picture is before a link, wrap it in the link
+  main.querySelectorAll('picture + a').forEach((a) => {
+    if (a.href === a.innerHTML) {
+      a.innerHTML = '';
+      a.append(a.previousElementSibling);
+    }
+  });
+}
+
 /**
  * loads everything that doesn't need to be delayed.
  */
@@ -686,6 +696,8 @@ async function loadLazy(doc) {
   sampleRUM('lazy');
   sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
   sampleRUM.observe(main.querySelectorAll('picture > img'));
+
+  wrapImagesWithLink(main);
 }
 
 /**
