@@ -1,1 +1,18 @@
 /* below the fold CSS goes here */
+@font-face {
+  font-family: 'titling-normal-regular';
+  src: url('./fonts/titling-normal-regular/Titling-Gothic-FB-Normal-Regular.eot');
+  src: url('./fonts/titling-normal-regular/Titling-Gothic-FB-Normal-Regular.eot') format('embedded-opentype');
+  src: url('./fonts/titling-normal-regular/Titling-Gothic-FB-Normal-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'titling-normal-medium';
+  src: url('./fonts/titling-normal-medium/Titling-Gothic-FB-Normal-Medium.eot');
+  src: url('./fonts/titling-normal-medium/Titling-Gothic-FB-Normal-Medium.eot') format('embedded-opentype');
+  src: url('./fonts/titling-normal-medium/Titling-Gothic-FB-Normal-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

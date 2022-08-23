@@ -10,10 +10,24 @@
  * governing permissions and limitations under the License.
  */
 
- :root {
+/* fallback font for titling-normal-medium (normal) */
+@font-face {
+  font-family: "titling-normal-medium-normal-fallback";
+  size-adjust: 123.731%;
+  src: local("Arial");
+}
+
+/* fallback font for titling-normal-regular (normal) */
+@font-face {
+  font-family: "titling-normal-regular-normal-fallback";
+  size-adjust: 116.1%;
+  src: local("Arial");
+}
+
+:root {
   /* fonts */
-  --heading-font-family: titling-normal-medium, sans-serif;
-  --body-font-family: titling-normal-regular, sans-serif;
+  --heading-font-family: titling-normal-medium, titling-normal-medium-normal-fallback, sans-serif;
+  --body-font-family: titling-normal-regular, titling-normal-regular-normal-fallback, sans-serif;
   --fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace;
 
   /* colors */
@@ -34,10 +48,8 @@
   --body-font-size-l: 17px;
   --body-font-size-m: 15px;
 
-
   /* nav height */
   --nav-height: 64px;
-
 }
 
 body {
