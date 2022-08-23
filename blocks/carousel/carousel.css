@@ -1,0 +1,120 @@
+main .carousel-container {
+  padding: 0;
+}
+
+main .carousel-wrapper {
+  padding-bottom: 128px;
+  max-width: unset;
+}
+
+main .carousel {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  box-shadow: var(--box-shadow-2);
+  margin: 0;
+  background-color: black;
+}
+
+main .carousel picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+main .carousel img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+  
+main .carousel > div {
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  position: relative;
+  height: 70vh;
+  max-height: 70vh;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: linear-gradient(#0000, #0008);
+  color: white;
+  z-index: 1;
+}
+
+main .carousel > div > div {
+  max-width: 90vw;
+  margin: auto;
+}
+
+main .carousel p,
+main .carousel h1,
+main .carousel h2,
+main .carousel h3,
+main .carousel h4,
+main .carousel h5,
+main .carousel h6 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+main .carousel::-webkit-scrollbar {
+    display: none;
+}
+
+main .carousel-wrapper .carousel-buttons {
+  text-align: center;
+  margin-top: -28px;
+  position: absolute;
+  display: flex;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  z-index: 2;
+}
+
+main .carousel-buttons button {
+  display: block;
+  height: 14px;
+  width: 14px;
+  padding: 0;
+  margin: 10px;
+  border-radius: 7px;
+  border-color: white;
+  background-color: white;
+  cursor: pointer;
+}
+
+main .carousel-buttons button.selected {
+  background-color: var(--color-1);
+}
+
+@media (min-width: 900px) {
+  main .carousel > div {
+    align-items: center;
+    height: 50vh;
+    max-height: 50vh;
+  }
+
+  main .carousel > div > div {
+    max-width: 40vw;
+  }
+  
+  main .carousel p,
+  main .carousel h1,
+  main .carousel h2,
+  main .carousel h3,
+  main .carousel h4,
+  main .carousel h5,
+  main .carousel h6 {
+    text-align: center;
+  }
+}

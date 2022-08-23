@@ -102,16 +102,16 @@ const convertBackgroundImages = (document) => {
   });
 };
 
-const convertSliderToSlideshowBlock = (main, document) => {
+const convertSliderToCarouselBlock = (main, document) => {
   main.querySelectorAll('.slider, .swiper-container').forEach((slider) => {
     const slides = slider.querySelectorAll('.swiper-slide');
     if (slides.length > 0) {
-      const slideshow = [['Slideshow']];
+      const carousel = [['Carousel']];
       
       slides.forEach((slide) => {
-        slideshow.push([slide]);
+        carousel.push([slide]);
       });
-      const table = WebImporter.DOMUtils.createTable(slideshow, document);
+      const table = WebImporter.DOMUtils.createTable(carousel, document);
       slider.replaceWith(table);
     }
   });
@@ -173,7 +173,7 @@ export default {
     makeAbsoluteLinks(main);
     makeProxySrcs(main);
 
-    convertSliderToSlideshowBlock(main, document);
+    convertSliderToCarouselBlock(main, document);
     convertContainerToColumnBlock(main, document);
     createGalleryBlock(main, document);
 
