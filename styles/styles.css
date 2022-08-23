@@ -10,18 +10,18 @@
  * governing permissions and limitations under the License.
  */
 
-/* fallback font for titling-normal-medium (normal) */
-@font-face {
+ /* fallback font for titling-normal-medium (normal) */
+ @font-face {
   font-family: "titling-normal-medium-normal-fallback";
-  size-adjust: 123.731%;
-  src: local("Arial");
+  size-adjust: 121.661%;
+  src: local("Trebuchet MS");
 }
 
 /* fallback font for titling-normal-regular (normal) */
 @font-face {
   font-family: "titling-normal-regular-normal-fallback";
-  size-adjust: 116.1%;
-  src: local("Arial");
+  size-adjust: 114.231%;
+  src: local("Trebuchet MS");
 }
 
 :root {
