@@ -33,7 +33,7 @@
   /* colors */
   --text-color: #eeeeee;
   --link-color: #ffffff;
-  --link-hover-color: #ffffff;
+  --link-hover-color: #5DC99F;
   --background-color: #000;
   --overlay-background-color: #000;
   --highlight-background-color: #cccccc;
@@ -98,7 +98,7 @@ a:any-link {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--link-hover-color);
 }
 
