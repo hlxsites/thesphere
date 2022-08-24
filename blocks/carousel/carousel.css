@@ -1,4 +1,4 @@
-main .carousel-container {
+main .carousel-container:first-of-type {
   padding: 0;
 }
 

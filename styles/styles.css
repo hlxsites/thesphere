@@ -30,10 +30,12 @@
   --body-font-family: titling-normal-regular, titling-normal-regular-normal-fallback, sans-serif;
   --fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace;
 
+  --color-green: #5DC99F;
+  
   /* colors */
   --text-color: #eeeeee;
   --link-color: #ffffff;
-  --link-hover-color: #5DC99F;
+  --link-hover-color: var(--color-green);
   --background-color: #000;
   --overlay-background-color: #000;
   --highlight-background-color: #cccccc;
@@ -84,7 +86,11 @@ h1 { font-size: var(--heading-font-size-xxl) }
 h2 { font-size: var(--heading-font-size-xl) }
 h3 { font-size: var(--heading-font-size-l) }
 h4 { font-size: var(--heading-font-size-m) }
-h5 { font-size: var(--heading-font-size-s) }
+h5 { 
+  font-size: var(--heading-font-size-s);
+  color: var(--color-green);
+
+}
 h6 { font-size: var(--heading-font-size-xs) }
 
 p, dl, ol, ul, pre, blockquote {
@@ -172,6 +178,11 @@ main input:hover {
 
 main .section {
   padding: 64px 16px;
+}
+
+main .section[data-align="center"] {
+  text-align: center;
+  display: flex;
 }
 
 main pre {
