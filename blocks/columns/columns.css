@@ -12,6 +12,22 @@
     text-align: center;
 }
 
+.columns ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.columns ul li, .columns ol li {
+    list-style: none;
+}
+
+.columns ul li img {
+    max-height: 200px;
+    width: auto;
+    border-radius: 20px;
+}
+
 @media (min-width: 900px) {
     .columns > div {
         display: flex;
