@@ -185,6 +185,14 @@ main .section[data-align="center"] {
   display: flex;
 }
 
+main .section[data-background-image] {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #11141b;
+  padding: 120px;
+}
+
 main pre {
   background-color: var(--overlay-background-color);
   padding: 1em;

@@ -666,6 +666,12 @@ function wrapImagesWithLink(main) {
   });
 }
 
+function decorateSectionWithMeta(main) {
+  main.querySelectorAll('.section[data-background-image]').forEach((section) => {
+    section.style.backgroundImage = `url(${section.getAttribute('data-background-image')})`;
+  });
+}
+
 /**
  * loads everything that doesn't need to be delayed.
  */
@@ -687,6 +693,7 @@ async function loadLazy(doc) {
   sampleRUM.observe(main.querySelectorAll('picture > img'));
 
   wrapImagesWithLink(main);
+  decorateSectionWithMeta(main);
 }
 
 /**
