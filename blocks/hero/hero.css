@@ -15,7 +15,8 @@ main .hero {
 }
 
 main .hero h1, 
-main .hero h6 {
+main .hero h6,
+main .hero p {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
