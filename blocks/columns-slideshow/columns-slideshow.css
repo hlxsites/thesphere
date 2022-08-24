@@ -1,0 +1,105 @@
+.columns-slideshow > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.columns-slideshow > div > div:last-of-type {
+    background-color: var(--color-green);
+    color: #333;
+    padding: 30px 50px;
+}
+
+.columns-slideshow > div > div:last-of-type h4,
+.columns-slideshow > div > div:last-of-type h6 {
+    text-transform: uppercase;
+}
+
+.columns-slideshow > div > div:last-of-type h6 {
+    order: 10;
+    padding: 30px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+.columns-slideshow img {
+    width: 100%;
+}
+
+.columns-slideshow .slideshow {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    box-shadow: var(--box-shadow-2);
+    margin: 0;
+}
+  
+    
+.columns-slideshow .slideshow > div {
+    width: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 1;
+  }
+  
+.columns-slideshow .slideshow > div > div {
+    /* max-width: 90vw; */
+    margin: auto;
+}
+  
+
+.columns-slideshow .slideshow::-webkit-scrollbar {
+    display: none;
+}
+  
+.columns-slideshow .slideshow-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+  
+.columns-slideshow .slideshow-buttons button {
+    display: block;
+    height: 14px;
+    width: 14px;
+    padding: 0;
+    margin: 10px;
+    border-radius: 7px;
+    border-color: #333;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.columns-slideshow .slideshow-buttons button.selected {
+    background-color: transparent;
+  }
+  
+@media (min-width: 900px) {
+    .columns-slideshow > div {
+        display: flex;
+        align-items: center;
+        flex-direction: unset;
+    }
+
+    .columns-slideshow > div > div {
+        flex: 1;
+        margin-left: 32px;
+    }
+
+    .columns-slideshow > div > div:first-of-type {
+        margin-left: unset;
+        width: 60%;
+    }
+    
+    .columns-slideshow > div > div:last-of-type {
+        padding: 100px 50px;
+        max-width: 40%;
+    }
+}

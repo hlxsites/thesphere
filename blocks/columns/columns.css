@@ -34,7 +34,7 @@
     padding: 20px;
 }
 
-.columns > div > div > p:first-of-type > picture {
+.columns > div > div p:first-child > picture {
     display: unset;
     position: absolute;
     z-index: -1;
@@ -44,7 +44,7 @@
     left: 0;
 }
 
-.columns > div > div > p:first-of-type > picture img {
+.columns > div > div > p:first-child > picture img {
     width: auto;
     height: 100%;
 }
