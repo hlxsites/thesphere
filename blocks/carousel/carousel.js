@@ -12,6 +12,13 @@ export default function decorate(block) {
     parent.parentNode.append(parent);
   });
 
+  block.querySelectorAll('img').forEach((img) => {
+    if (img.width === img.height) {
+      // portrait image
+      img.classList.add('portrait');
+    }
+  });
+
   const buttons = document.createElement('div');
   const autoPlayList = [];
   let carouselInterval = null;

@@ -37,6 +37,10 @@ main .carousel img {
 main .carousel.portrait img {
   width: auto;
 }
+
+main .carousel img.portrait {
+  object-fit: contain;
+}
   
 main .carousel > div {
   width: 100%;
