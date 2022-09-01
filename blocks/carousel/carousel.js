@@ -5,7 +5,6 @@ function selectButton(block, button, row, buttons) {
 }
 
 export default function decorate(block) {
-
   block.querySelectorAll('picture').forEach((picture) => {
     // move picture to last position and remove parent p tag
     const parent = picture.parentNode;

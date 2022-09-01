@@ -2,7 +2,7 @@
 @import url('./fonts/pe-icon-7-stroke.css');
 
 @font-face {
-  font-family: 'titling-normal-regular';
+  font-family: titling-normal-regular;
   src: url('./fonts/titling-normal-regular/Titling-Gothic-FB-Normal-Regular.eot');
   src: url('./fonts/titling-normal-regular/Titling-Gothic-FB-Normal-Regular.eot') format('embedded-opentype');
   src: url('./fonts/titling-normal-regular/Titling-Gothic-FB-Normal-Regular.woff') format('woff');
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: 'titling-normal-medium';
+  font-family: titling-normal-medium;
   src: url('./fonts/titling-normal-medium/Titling-Gothic-FB-Normal-Medium.eot');
   src: url('./fonts/titling-normal-medium/Titling-Gothic-FB-Normal-Medium.eot') format('embedded-opentype');
   src: url('./fonts/titling-normal-medium/Titling-Gothic-FB-Normal-Medium.woff') format('woff');

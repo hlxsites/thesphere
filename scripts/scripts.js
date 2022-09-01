@@ -577,7 +577,7 @@ initHlx();
 
 const LCP_BLOCKS = ['carousel']; // add your LCP blocks to the list
 const RUM_GENERATION = 'project-1'; // add your RUM generation information here
-const ICON_ROOT = '/icons';
+// const ICON_ROOT = '/icons';
 
 sampleRUM('top');
 
@@ -593,16 +593,17 @@ window.addEventListener('error', (event) => {
 
 loadPage(document);
 
-function buildHeroBlock(main) {
-  const h1 = main.querySelector('h1');
-  const picture = main.querySelector('picture');
-  // eslint-disable-next-line no-bitwise
-  if (h1 && picture && (h1.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING)) {
-    const section = document.createElement('div');
-    section.append(buildBlock('hero', { elems: [picture, h1] }));
-    main.prepend(section);
-  }
-}
+// function buildHeroBlock(main) {
+//   const h1 = main.querySelector('h1');
+//   const picture = main.querySelector('picture');
+//   // eslint-disable-next-line no-bitwise
+//   if (h1 && picture &&
+// (h1.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING)) {
+//     const section = document.createElement('div');
+//     section.append(buildBlock('hero', { elems: [picture, h1] }));
+//     main.prepend(section);
+//   }
+// }
 
 function loadHeader(header) {
   const headerBlock = buildBlock('header', '');
@@ -622,7 +623,7 @@ function loadFooter(footer) {
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
-function buildAutoBlocks(main) {
+function buildAutoBlocks() {
   try {
     // buildHeroBlock(main);
   } catch (error) {

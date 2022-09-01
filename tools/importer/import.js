@@ -97,7 +97,6 @@ const convertBackgroundImages = (document) => {
       } catch (error) {
         console.warn(`Unable to make proxy src for ${el.dataset.background}: ${error.message}`);
       }
-
     }
   });
 };
@@ -107,7 +106,7 @@ const convertSliderToCarouselBlock = (main, document) => {
     const slides = slider.querySelectorAll('.swiper-slide');
     if (slides.length > 0) {
       const carousel = [['Carousel']];
-      
+
       slides.forEach((slide) => {
         carousel.push([slide]);
       });
@@ -115,7 +114,7 @@ const convertSliderToCarouselBlock = (main, document) => {
       slider.replaceWith(table);
     }
   });
-}
+};
 
 const convertContainerToColumnBlock = (main, document) => {
   main.querySelectorAll('.container').forEach((container) => {
@@ -133,13 +132,13 @@ const convertContainerToColumnBlock = (main, document) => {
         nbCols = r.length;
         columns.push(r);
       });
-      
+
       const table = WebImporter.DOMUtils.createTable(columns, document);
       table.querySelector('th').colSpan = nbCols;
       container.replaceWith(table);
     }
   });
-}
+};
 
 const createGalleryBlock = (main, document) => {
   main.querySelectorAll('.gallery').forEach((gallery) => {
@@ -150,8 +149,7 @@ const createGalleryBlock = (main, document) => {
     const table = WebImporter.DOMUtils.createTable(block, document);
     gallery.replaceWith(table);
   });
-}
-
+};
 
 export default {
   /**
@@ -179,7 +177,7 @@ export default {
 
     WebImporter.DOMUtils.remove(document, [
       'iframe',
-      '.copyrights'
+      '.copyrights',
     ]);
 
     return document.body;

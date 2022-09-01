@@ -8,7 +8,7 @@ export default function decorate(block) {
   const cols = [...block.firstElementChild.children];
   block.classList.add(`columns-slideshow-${cols.length}-cols`);
 
-  let slideshow = document.createElement('div');
+  const slideshow = document.createElement('div');
   slideshow.className = 'slideshow';
   block.querySelectorAll('h6').forEach((h6, i) => {
     const div = document.createElement('div');
