@@ -24,7 +24,7 @@ span.icon {
   margin: 10px 12px;
   padding: 0;
   height: 32px;
-  font-family: "Pe-icon-7-stroke";
+  font-family: "Pe-icon-7-stroke"; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
   font-style: normal;
   color: #5DC99F;
   font-size: 30px;
