@@ -1,6 +1,20 @@
 // eslint-disable-next-line import/no-cycle
 import { sampleRUM } from './scripts.js';
 
+const loadScript = (url, attrs) => {
+  const head = document.querySelector('head');
+  const script = document.createElement('script');
+  script.src = url;
+  if (attrs) {
+    // eslint-disable-next-line no-restricted-syntax, guard-for-in
+    for (const attr in attrs) {
+      script.setAttribute(attr, attrs[attr]);
+    }
+  }
+  head.append(script);
+  return script;
+};
+
 // Core Web Vitals RUM collection
 sampleRUM('cwv');
 
@@ -36,3 +50,14 @@ gtag('set', 'ads_data_redaction', true);
 // Google Tag Manager
 // eslint-disable-next-line
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KL3PT7C');
+
+// OneTrust Cookies Consent Notice start
+
+loadScript('https://cdn.cookielaw.org/scripttemplates/otSDKStub.js', {
+  type: 'text/javascript',
+  charset: 'UTF-8',
+  'data-domain-script': 'f7c01035-72d2-4100-8be0-2b69fc01a19',
+});
+
+window.OptanonWrapper = () => {};
+// OneTrust Cookies Consent Notice end
