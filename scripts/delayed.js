@@ -56,7 +56,7 @@ gtag('set', 'ads_data_redaction', true);
 loadScript('https://cdn.cookielaw.org/scripttemplates/otSDKStub.js', {
   type: 'text/javascript',
   charset: 'UTF-8',
-  'data-domain-script': 'f7c01035-72d2-4100-8be0-2b69fc01a19',
+  'data-domain-script': 'f7c01035-72d2-4100-8be0-2b69fc01a195',
 });
 
 window.OptanonWrapper = () => {};
